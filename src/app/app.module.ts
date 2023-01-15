@@ -22,7 +22,15 @@ import { AlarmsComponent } from './charts/alarms/alarms.component';
 import { FalloutsComponent } from './tables/fallouts/fallouts.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { MatSortModule } from '@angular/material/sort';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTable, MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { MockfeedsComponent } from './mockfeeds/mockfeeds.component';
+import { CdgUsageComponent } from './mini-cards/cdg-usage/cdg-usage.component';
+import { AcmUsageComponent } from './mini-cards/acm-usage/acm-usage.component';
+import { LecAlarmsComponent } from './mini-cards/lec-alarms/lec-alarms.component';
+import { CgOrderComponent } from './mini-cards/cg-order/cg-order.component';
+import { FinanceAlarmComponent } from './mini-cards/finance-alarm/finance-alarm.component';
+import { CountUpModule } from 'ngx-countup';
 
 
 
@@ -34,7 +42,13 @@ import { MatTable, MatTableDataSource, MatTableModule } from '@angular/material/
     CardComponent,
     FalloutSummaryComponent,
     AlarmsComponent,
-    FalloutsComponent
+    FalloutsComponent,
+    MockfeedsComponent,
+    CdgUsageComponent,
+    AcmUsageComponent,
+    LecAlarmsComponent,
+    CgOrderComponent,
+    FinanceAlarmComponent
   ],
   imports: [
     NgxDatatableModule,
@@ -53,9 +67,10 @@ import { MatTable, MatTableDataSource, MatTableModule } from '@angular/material/
     NgChartsModule,
     MatSortModule,
     MatTableModule,
+    MatExpansionModule,
+    CountUpModule
     
     
-  
     
   ],
   providers: [],
