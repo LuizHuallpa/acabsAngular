@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatPaginator } from '@angular/material/paginator';
 import { MockfeedsComponent } from './mockfeeds.component';
 
 describe('MockfeedsComponent', () => {

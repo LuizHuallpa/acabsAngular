@@ -31,6 +31,8 @@ import { LecAlarmsComponent } from './mini-cards/lec-alarms/lec-alarms.component
 import { CgOrderComponent } from './mini-cards/cg-order/cg-order.component';
 import { FinanceAlarmComponent } from './mini-cards/finance-alarm/finance-alarm.component';
 import { CountUpModule } from 'ngx-countup';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+
 
 
 
@@ -48,7 +50,10 @@ import { CountUpModule } from 'ngx-countup';
     AcmUsageComponent,
     LecAlarmsComponent,
     CgOrderComponent,
-    FinanceAlarmComponent
+    FinanceAlarmComponent,
+    
+    
+    
   ],
   imports: [
     NgxDatatableModule,
@@ -68,9 +73,9 @@ import { CountUpModule } from 'ngx-countup';
     MatSortModule,
     MatTableModule,
     MatExpansionModule,
-    CountUpModule
-    
-    
+    CountUpModule,
+    MatPaginatorModule,
+  
     
   ],
   providers: [],
