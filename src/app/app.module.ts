@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
@@ -17,6 +19,12 @@ import { CardComponent } from './card/card.component';
 import { NgChartsModule } from 'ng2-charts';
 import { FalloutSummaryComponent } from './charts/fallout-summary/fallout-summary.component';
 import { AlarmsComponent } from './charts/alarms/alarms.component';
+import { FalloutsComponent } from './tables/fallouts/fallouts.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTable, MatTableDataSource, MatTableModule } from '@angular/material/table';
+
+
 
 
 @NgModule({
@@ -25,9 +33,11 @@ import { AlarmsComponent } from './charts/alarms/alarms.component';
     DashboardComponent,
     CardComponent,
     FalloutSummaryComponent,
-    AlarmsComponent
+    AlarmsComponent,
+    FalloutsComponent
   ],
   imports: [
+    NgxDatatableModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -40,7 +50,13 @@ import { AlarmsComponent } from './charts/alarms/alarms.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    NgChartsModule
+    NgChartsModule,
+    MatSortModule,
+    MatTableModule,
+    
+    
+  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

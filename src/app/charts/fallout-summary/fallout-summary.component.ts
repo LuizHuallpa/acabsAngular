@@ -14,7 +14,7 @@ export class FalloutSummaryComponent implements OnInit {
     this.createChart();
   }
   createChart() {
-    this.chart = new Chart('MyChart', {
+    this.chart = new Chart('FalloutSummary', {
       type: 'line', //this denotes tha type of chart
 
       data: {
@@ -33,17 +33,18 @@ export class FalloutSummaryComponent implements OnInit {
           {
             label: 'Sales',
             data: ['467', '576', '572', '79', '92', '574', '573', '576'],
-            backgroundColor: 'blue',
+            
           },
           {
             label: 'Profit',
             data: ['542', '542', '536', '327', '17', '0.00', '538', '541'],
-            backgroundColor: 'limegreen',
+           
           },
         ],
       },
       options: {
-        responsive:true
+        responsive: true,
+        aspectRatio:2.5
       },
     });
   }

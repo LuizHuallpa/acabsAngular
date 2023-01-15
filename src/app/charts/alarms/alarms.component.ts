@@ -37,7 +37,10 @@ export class AlarmsComponent implements OnInit {
         }]
       },
       options: {
-       responsive:true
+        responsive: true,
+        animation: {
+          animateRotate:true
+        }
       },
     });
   }

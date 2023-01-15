@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -37,16 +38,16 @@ cardLayout = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
        return {
          columns: 1,
          miniCard: { cols: 1, rows: 1 },
-         chart: { cols: 1, rows: 2 },
-         table: { cols: 1, rows: 2 },
+         chart: { cols: 1, rows: 3 },
+         table: { cols: 1, rows: 3 },
        };
      }
 
     return {
        columns: 5,
        miniCard: { cols: 1, rows: 1 },
-       chart: { cols: 2, rows: 2 },
-       table: { cols: 3, rows: 2 },
+       chart: { cols: 2, rows: 3 },
+       table: { cols: 3, rows: 3 },
      };
    })
  );
